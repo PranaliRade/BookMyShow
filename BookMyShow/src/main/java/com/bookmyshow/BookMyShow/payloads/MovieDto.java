@@ -25,4 +25,5 @@ public class MovieDto {
     private String genre;
     private String rating;
     private String country;
+    private BookingDto bookingDto;
 }
