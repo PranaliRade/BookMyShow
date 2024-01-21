@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -21,4 +22,7 @@ public class Movies {
     private String genre;
     private String rating;
     private String country;
+    @OneToMany(mappedBy = "movie")
+    private List<Booking> bookings;
+
 }
